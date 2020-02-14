@@ -1,18 +1,18 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b9d05307c49dfa4ac4a169721c49e99e",
+    "revision": "066e7b3051843d6f532e507c5ae8bed8",
     "url": "/hopdeco-replicate/index.html"
   },
   {
-    "revision": "7fa6a18094e8740e9a8d",
-    "url": "/hopdeco-replicate/static/css/main.eaa243b4.chunk.css"
+    "revision": "b410f96b8c424b393123",
+    "url": "/hopdeco-replicate/static/css/main.adc4a630.chunk.css"
   },
   {
     "revision": "c3470a1840f2d57eb712",
     "url": "/hopdeco-replicate/static/js/2.9f4af176.chunk.js"
   },
   {
-    "revision": "7fa6a18094e8740e9a8d",
+    "revision": "b410f96b8c424b393123",
     "url": "/hopdeco-replicate/static/js/main.d873a2f5.chunk.js"
   },
   {

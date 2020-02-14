@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/hopdeco-replicate/precache-manifest.8f65956d5562df4504db52262b06c332.js"
+  "/hopdeco-replicate/precache-manifest.c7a06eb34506c2bd4691f176eb464f3f.js"
 );
 
 self.addEventListener('message', (event) => {
