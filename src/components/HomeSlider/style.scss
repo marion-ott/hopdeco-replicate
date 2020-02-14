@@ -64,14 +64,11 @@
     }
     &-textContent {
         display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-            -ms-flex-direction: column;
                 flex-direction: column;
         -webkit-box-pack: end;
-            -ms-flex-pack: end;
                 justify-content: flex-end;
         position: relative;
         top: 9rem;
@@ -84,6 +81,7 @@
         color: $white;
         &:before {
             content: '"';
+            display: none;
             position: absolute;
             top: 10%;
             left: calc(-20rem / #{$unit-value});
@@ -124,10 +122,8 @@
     }
     &-controls {
         display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
         -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
                 justify-content: space-between;
         width: 10rem;
         position: absolute;
@@ -138,13 +134,10 @@
         z-index: 1;
         div {
             display: -webkit-box;
-            display: -ms-flexbox;
             display: flex;
             -webkit-box-align: center;
-                -ms-flex-align: center;
                     align-items: center;
             -webkit-box-pack: center;
-                -ms-flex-pack: center;
                     justify-content: center;
             position: relative;
             width: 4rem;

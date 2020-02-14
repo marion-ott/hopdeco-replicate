@@ -2,18 +2,15 @@
 
 .Cta {
     display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
             justify-content: space-between;
     -webkit-box-align: center;
-        -ms-flex-align: center;
             align-items: center;
     width: 55%;
     max-width: calc(350rem / #{$unit-value});
     margin-top: calc(60rem / #{$unit-value});
-    font-size: calc(20rem / #{$unit-value});
+    font-size: calc(18rem / #{$unit-value});
     color: $black;
     text-decoration: none;
     &:hover {
@@ -21,6 +18,7 @@
             background-color: #ebebeb;
         }
         .Cta-circle {
+            border-bottom: 2px solid white;
             &:before {
                 background-color: #ebebeb;
             }
@@ -35,10 +33,8 @@
     }
     &-text {
         display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
         -webkit-box-align: center;
-            -ms-flex-align: center;
                 align-items: center;
         width: 77%;
         height: calc(80rem / #{$unit-value});

@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/hopdeco-replicate/static/css/main.adc4a630.chunk.css",
+    "main.js": "/hopdeco-replicate/static/js/main.d873a2f5.chunk.js",
+    "main.js.map": "/hopdeco-replicate/static/js/main.d873a2f5.chunk.js.map",
+    "runtime-main.js": "/hopdeco-replicate/static/js/runtime-main.f6283b49.js",
+    "runtime-main.js.map": "/hopdeco-replicate/static/js/runtime-main.f6283b49.js.map",
+    "static/js/2.9f4af176.chunk.js": "/hopdeco-replicate/static/js/2.9f4af176.chunk.js",
+    "static/js/2.9f4af176.chunk.js.map": "/hopdeco-replicate/static/js/2.9f4af176.chunk.js.map",
+    "index.html": "/hopdeco-replicate/index.html",
+    "precache-manifest.c7a06eb34506c2bd4691f176eb464f3f.js": "/hopdeco-replicate/precache-manifest.c7a06eb34506c2bd4691f176eb464f3f.js",
+    "service-worker.js": "/hopdeco-replicate/service-worker.js",
+    "static/css/main.adc4a630.chunk.css.map": "/hopdeco-replicate/static/css/main.adc4a630.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f6283b49.js",
+    "static/js/2.9f4af176.chunk.js",
+    "static/css/main.adc4a630.chunk.css",
+    "static/js/main.d873a2f5.chunk.js"
+  ]
+}
