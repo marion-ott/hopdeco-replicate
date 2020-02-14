@@ -1,0 +1,9 @@
+@import 'src/global/settings';
+
+.layout {
+    width: calc(100% - 9rem * 2);
+    margin: 0 auto;
+    padding-top: $sectionPadTop;
+    position: relative;
+    z-index: 2;
+}

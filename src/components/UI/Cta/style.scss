@@ -1,0 +1,86 @@
+@import 'src/global/settings';
+
+.Cta {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 55%;
+    max-width: calc(350rem / #{$unit-value});
+    margin-top: calc(60rem / #{$unit-value});
+    font-size: calc(20rem / #{$unit-value});
+    color: $black;
+    text-decoration: none;
+    &:hover {
+        .Cta-text {
+            background-color: #ebebeb;
+        }
+        .Cta-circle {
+            &:before {
+                background-color: #ebebeb;
+            }
+            &:before, &:after {
+                -webkit-transform: translate(-50%, -50%) scale(1);
+                        transform: translate(-50%, -50%) scale(1);
+            }
+            svg {
+                fill: #ebebeb;
+            }
+        }
+    }
+    &-text {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        width: 77%;
+        height: calc(80rem / #{$unit-value});
+        padding-left: calc(30rem / #{$unit-value});
+        font-weight: 500;
+        background-color: $white;
+        -webkit-transition: ease .2s all;
+        transition: ease .2s all;
+    }
+    &-circle {
+        width: calc(80rem / #{$unit-value});
+        height: calc(80rem / #{$unit-value});
+        position: relative;
+        &:before, &:after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            border-radius: 50px;
+            -webkit-transition: ease .2s all;
+            transition: ease .2s all;
+        }
+        &:before {
+            -webkit-transform: translate(-50%, -50%) scale(0.2);
+                    transform: translate(-50%, -50%) scale(0.2);
+            width: 70%;
+            height: 70%;
+            background-color: $white;
+        }
+        &:after {
+            -webkit-transform: translate(-50%, -50%) scale(0);
+            transform: translate(-50%, -50%) scale(0);
+            width: 12%;
+            height: 12%;
+            -webkit-transition-delay: .1s;
+                    transition-delay: .1s;
+            background-color: $black;
+        }
+        svg {
+            fill: $white;
+            -webkit-transition: ease .2s all;
+            transition: ease .2s all;
+        }
+    }
+}

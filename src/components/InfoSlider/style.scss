@@ -1,0 +1,151 @@
+@import 'src/global/settings';
+
+.InfoSlider {
+    &-container {
+        position: relative;
+    }
+    &-nav {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        width: 100%;
+        height: calc(100rem / #{$unit-value});
+        position: relative;
+        background-color: #dddde1;
+    }
+    &-navItem {
+        width: 20%;
+        height: 100%;
+        padding-left: calc(50rem / #{$unit-value});
+        padding-top: calc(20rem / #{$unit-value});
+        cursor: pointer;
+        span {
+            display: block;
+            pointer-events: none;
+            &:last-child {
+                margin-top: calc(25rem / #{$unit-value});
+                font-weight: 500;
+            }
+        }
+    }
+    &-navProgressBar {
+        position: absolute;
+        top: 45%;
+        left: 0;
+        width: 100%;
+        height: calc(1rem / #{$unit-value});
+        background-color: $gridGrey;
+        &.--filled {
+            width: 20%;
+            height: calc(2rem / #{$unit-value});
+            background-color: $black;
+            -webkit-transition: ease-in-out .2s width;
+            transition: ease-in-out .2s width;
+        }
+    }
+    &-item {
+        height: calc(650rem / #{$unit-value});
+    }
+    &-content {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        height: calc(620rem / #{$unit-value});
+        padding: 0 calc(70rem / #{$unit-value});
+        background-color: $white;
+    }
+    &-textContent {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        width: 35%;
+        padding-top: calc(125rem / #{$unit-value});
+        h3 {
+            margin-bottom: calc(25rem / #{$unit-value});
+            font-size: 1.2rem;
+            line-height: 1.2;
+            letter-spacing: 3px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        p {
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+        div {
+            max-width: calc(280rem / #{$unit-value});
+            margin-bottom: calc(-30rem / #{$unit-value});
+            svg {
+                fill: $gridGrey;
+            }
+        }
+    }
+    &-visualContent {
+        width: 55%;
+        padding-top: calc(40rem / #{$unit-value});
+        div {
+            width: 100%;
+            max-width: calc(650rem / #{$unit-value});
+            height: 100%;
+            margin: 0 auto;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    }
+    &-controls {
+        position: absolute;
+        top: calc(50rem / #{$unit-value});
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        max-width: calc(260rem / #{$unit-value});
+        padding-left: calc(70rem / 16);
+        div {
+            width: 40%;
+            cursor: pointer;
+            &:first-child {
+                -webkit-transform: scaleX(-1);
+                        transform: scaleX(-1);
+            }
+            &:hover {
+                svg {
+                    opacity: 1;
+                    -webkit-transform: translateX(20px);
+                    transform: translateX(20px);
+                }
+            }
+        }
+        svg {
+            width: 60%;
+            opacity: 0.4;
+            -webkit-transition: .2s all;
+            transition: .2s all;
+            &:last-child {
+                display: block;
+                margin-left: auto;
+            }
+        }
+    }
+    .slick-slide * {
+        outline: none !important;
+        &:focus {
+            outline: none !important;
+        }
+    }
+}

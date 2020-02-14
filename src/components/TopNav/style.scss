@@ -1,0 +1,23 @@
+@import 'src/global/settings';
+
+.TopNav {
+    width: 55%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: absolute;
+    top: 4.1rem;
+    right: 10rem;
+    z-index: 1;
+    a {
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        color: $white;
+        &:after {
+            background-color: $white;
+        }
+    }
+}

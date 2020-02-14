@@ -1,0 +1,129 @@
+@import 'src/global/settings';
+
+.Header {
+    &-logoContainer, 
+    &-burger {   
+        top: 0;
+        width: 9rem;
+        height: 9rem;
+        position: relative;
+        z-index: 5;
+    }
+    &-logoContainer {
+        position: fixed;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        left: 0;
+    }
+    &-logo {
+        width: calc(90rem / #{$unit-value});
+        height: calc(90rem / #{$unit-value});
+        path {
+            fill: $white;
+            -webkit-transition: ease .2 fill;
+            transition: ease .2 fill;
+        }
+        &.hasScrolled {
+            path {
+                fill: $black;
+            }
+        }
+    }
+    &-burger {
+        position: fixed;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        right: 0;
+    }
+    &-burgerIconContainer {
+        display: inline-block;
+        vertical-align: middle;
+        width: calc(35rem / #{$unit-value});
+        height: calc(35rem / #{$unit-value});
+        background: none;
+        border: none;
+        -webkit-box-sizing: content-box;
+                box-sizing: content-box;
+        -webkit-appearance: none;
+        cursor: pointer;
+        &.menuIsClosed {
+            &:hover {
+                .Header-burgerIcon:before {
+                    -webkit-transform: translateY(calc(-4rem / #{$unit-value}));
+                    transform: translateY(calc(-4rem / #{$unit-value}));
+                }
+
+                .Header-burgerIcon:after {
+                    -webkit-transform: translateY(calc(4rem / #{$unit-value}));
+                    transform: translateY(calc(4rem / #{$unit-value}));
+                }
+            }
+        }
+        &.menuIsOpen {
+            .Header-burgerIcon {
+                background-color: transparent;
+                &:before {
+                    top: 50%;
+                    -webkit-transform: translateY(-50%) rotate(45deg);
+                    transform: translateY(-50%) rotate(45deg);
+                }
+    
+                &:after {
+                    top: 50%;
+                    -webkit-transform: translateY(-50%) rotate(-45deg);
+                    transform: translateY(-50%) rotate(-45deg);
+                }
+            }
+        }
+    }
+    &-burgerIcon {
+        display: inline-block;
+        vertical-align: middle;
+        width: calc(35rem / #{$unit-value});
+        height: 1px;
+        position: relative;
+        background-color: $white;
+        pointer-events: none;
+        -webkit-transition: ease .15s background;
+        transition: ease .15s background;
+        &:before, &:after {
+            content: '';
+            width: calc(35rem / #{$unit-value});
+            height: 1px;
+            position: absolute;
+            left: 0;
+            background-color: $white;
+            -webkit-transition: background ease-in-out .1s, -webkit-transform ease-in-out .15s;
+            transition: background ease-in-out .1s, -webkit-transform ease-in-out .15s;
+            transition: transform ease-in-out .15s, background ease-in-out .1s;
+            transition: transform ease-in-out .15s, background ease-in-out .1s, -webkit-transform ease-in-out .15s;
+        }
+        &:before {
+            top: calc(-8rem / #{$unit-value});
+        }
+        &:after {
+            bottom: calc(-8rem / #{$unit-value});
+        }
+        &.hasScrolled {
+            background-color: $black;
+            &:before,
+            &:after {
+                background-color: $black;
+            }
+        }
+    }
+}

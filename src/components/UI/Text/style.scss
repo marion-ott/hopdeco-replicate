@@ -1,0 +1,16 @@
+@import 'src/global/settings';
+
+.Text {
+    width: 50%;
+    &.alignLeft {
+        margin-right: auto;
+    }
+    &.alignRight {
+        margin-left: auto;
+    }
+    p {
+        max-width: 25rem;
+        font-size: 1.15rem;
+        line-height: 1.75;
+    }
+}
