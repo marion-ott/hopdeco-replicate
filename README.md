@@ -1,4 +1,4 @@
-## Humble attemp to replicate Hopdeco website by Locomotive
+## Humble attempt to replicate Hopdeco website by Locomotive
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
